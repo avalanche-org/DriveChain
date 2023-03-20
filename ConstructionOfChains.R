@@ -1,4 +1,18 @@
+# ---------------------------- #
 rm(list=ls())
+
+# ---------------------------- #
+packages_to_install = setdiff(c("readxl", 
+                                "dplyr", 
+                                "plyr", 
+                                "stringr", 
+                                "outbreaks", 
+                                "visNetwork", 
+                                "epicontacts"), rownames(installed.packages()))
+
+install.packages(packages_to_install, dependencies=TRUE, repos="http://cran.r-project.org")
+
+# ---------------------------- #
 library(readxl)
 library(dplyr)
 library(plyr)

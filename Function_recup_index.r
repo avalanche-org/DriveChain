@@ -26,17 +26,3 @@ recup_index<- function(data = d, C = NULL){
   result <- data.frame(result)
   return(result)
 }
-
-# x1 <- "AAPpp290A"
-# x2 <- "AAPpp290"
-# x3 <- "AAPpp290"
-# x4 <- "AAPpp290"
-# #
-# C="C"
-# b <-  c(x1,x2,x3,x4)
-# b = id_missing_index
-# recup_index(data = id_missing_index, "-C")
-# aa = recup_index(data = b, C)
-
-# recup_index(data = b, "C")
-
